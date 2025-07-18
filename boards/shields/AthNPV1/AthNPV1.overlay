@@ -32,8 +32,8 @@
 
     default_transform: keymap_transform0 {
         compatible = "zmk,matrix-transform";
-        columns = <3>; // Length of the "col-gpios" array
-        rows = <3>; // Length of the "row-gpios" array
+        columns = <5>; // Length of the "col-gpios" array
+        rows = <5>; // Length of the "row-gpios" array
         map = <
         //         | Key 5 |
         //   Key 1 | Key 2 | Key 3 | Key 4 | Key10
