@@ -35,7 +35,7 @@
             a-gpios = <&gpio0 31 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
             b-gpios = <&gpio0 29 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
             steps = <80>;
-            status = "disabled";
+            status = "okay";
         };
 
     //TRANSFORM MATRIX
@@ -75,9 +75,6 @@
         sensors = <&left_encoder>;
         triggers-per-rotation = <20>;
     };  
-    &left_encoder {
-    status = "okay";
-    };
 };
 
     
