@@ -30,12 +30,12 @@
                 <&gpio1 6 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>;
     };
 
-    left_encoder: encoder_left {
+    encoder: encoder {
             compatible = "alps,ec11";
             a-gpios = <&gpio0 31 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
             b-gpios = <&gpio0 29 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
             steps = <80>;
-            status = "okay";
+            status = "disabled";
         };
 
     //TRANSFORM MATRIX
@@ -72,9 +72,12 @@
 
     sensors: sensors {
         compatible = "zmk,keymap-sensors";
-        sensors = <&left_encoder>;
+        sensors = <&encoder>;
         triggers-per-rotation = <20>;
     };  
+};
+&encoder {
+    status = "okay";
 };
 
     
