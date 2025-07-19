@@ -65,14 +65,14 @@
                 bindings
                     = <&macro_tap &tog 1 &rgb_ug RGB_COLOR_HSB(0,100,60)>
                     ;
-            }
+            };
             toglyer0: toglyer0{
                 compatible = "zmk,behavior-macro";
                 #binding-cells = <0>;
                 bindings
                     = <&macro_tap &tog 1 &rgb_ug RGB_COLOR_HSB(120,10,60)>
                     ;
-            }
+            };
     
     };
 
