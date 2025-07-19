@@ -96,7 +96,7 @@
             &kp F16     &kp KP_N1   &kp KP_N2       &kp KP_N3         &kp KP_ENTER
             &kp F17     &kp KP_N0                   &kp KP_DOT 
         >;
-            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
+            sensor-bindings = <&inc_dec_kp UP DOWN>;
         };
          FUNCT { // Layer 1
             display-name = "Functions";
